@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Layout from "./components/Layout";
+import { Routes, Route } from "react-router";
+import LoginForm from "./components/LoginForm";
+import FetchAxios from "./components/FetchAxios";
+import FetchApi from "./components/FetchApi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" />
+        <Route path="/login-normal" element={<LoginForm />} />
+        <Route path="/fetch-axios" element={<FetchAxios />} />
+        <Route path="/fetch-api" element={<FetchApi />} />
+      </Routes>
+    </Layout>
   );
 }
 
