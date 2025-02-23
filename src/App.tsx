@@ -1,9 +1,9 @@
-import "./App.css";
-import Layout from "./components/Layout";
-import { Routes, Route } from "react-router";
-import LoginForm from "./components/LoginForm";
-import FetchAxios from "./components/FetchAxios";
-import FetchApi from "./components/FetchApi";
+import './App.css';
+import Layout from './components/Layout';
+import { Routes, Route } from 'react-router';
+import LoginForm from './components/LoginForm';
+import FetchAxios from './components/FetchAxios';
+import FetchApi from './components/FetchApi';
 
 function App() {
   return (

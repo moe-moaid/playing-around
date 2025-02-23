@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import LoginForm from "./LoginForm";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import LoginForm from './LoginForm';
 
 interface Props {
   children: React.ReactNode;
 }
 
 const routes = [
-  { link: "/", title: "Home" },
-  { link: "/login-normal", title: "Login Form" },
-  { link: "/fetch-axios", title: "Fetch Axios" },
-  { link: "/fetch-api", title: "Fetch API" },
+  { link: '/', title: 'Home' },
+  { link: '/login-normal', title: 'Login Form' },
+  { link: '/fetch-axios', title: 'Fetch Axios' },
+  { link: '/fetch-api', title: 'Fetch API' },
 ];
 
 function Layout({ children }: Props) {
