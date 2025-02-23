@@ -14,6 +14,15 @@ const routes = [
 ];
 
 function Layout({ children }: Props) {
+  const inputText = 'This is a test sentence.';
+  const OMITTED_WORDS = ['is', 'a'];
+  const reg = new RegExp('\\b(' + OMITTED_WORDS.join('|') + ')\\b', 'gi');
+
+  const newText = inputText.replaceAll(reg, '');
+  console.log(JSON.stringify(newText));
+  // Output: "This  test sentence."
+  // Notice the extra space between "This" and "test"
+
   return (
     <>
       <nav className="flex flex-row justify-center items-center bg-green-50 py-2">
