@@ -11,6 +11,7 @@ const routes = [
   { link: '/login-normal', title: 'Login Form' },
   { link: '/fetch-axios', title: 'Fetch Axios' },
   { link: '/fetch-api', title: 'Fetch API' },
+  { link: '/dynamic-list', title: 'Dynamic List' },
 ];
 
 function Layout({ children }: Props) {

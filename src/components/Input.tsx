@@ -21,7 +21,7 @@ function Input({ type, placeholder, required, name }: InputProps) {
           {required ? ' *' : ''}
         </label>
         <input
-          className="outline-none z-90 bg-transparent"
+          className="outline-none z-90 bg-transparent w-full"
           name={name}
           type={type}
           required={required}

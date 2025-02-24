@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router';
 import LoginForm from './components/LoginForm';
 import FetchAxios from './components/FetchAxios';
 import FetchApi from './components/FetchApi';
+import DynamicList from './components/DynamicList';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login-normal" element={<LoginForm />} />
         <Route path="/fetch-axios" element={<FetchAxios />} />
         <Route path="/fetch-api" element={<FetchApi />} />
+        <Route path="/dynamic-list" element={<DynamicList />} />
       </Routes>
     </Layout>
   );
