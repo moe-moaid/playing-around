@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThemeButton from './ThemeButton';
 interface Props {
   children: React.ReactNode;
 }
@@ -33,6 +34,9 @@ function Layout({ children }: Props) {
               </li>
             </Link>
           ))}
+          <li>
+            <ThemeButton />
+          </li>
         </ul>
       </nav>
       {children}

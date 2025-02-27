@@ -20,10 +20,6 @@
     "jsx": "react-jsx",
     "noImplicitAny": false,
     "baseUrl": "./",
-
-    // Caching
-    "incremental": true,
-    "tsBuildInfoFile": ".cache/tsbuildinfo"
   },
   "include": ["src"]
 }
