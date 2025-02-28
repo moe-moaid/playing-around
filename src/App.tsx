@@ -5,6 +5,7 @@ import LoginForm from './components/LoginForm';
 import FetchAxios from './components/FetchAxios';
 import FetchApi from './components/FetchApi';
 import DynamicList from './components/DynamicList';
+import ReduxPlayground from './components/ReduxPlayground';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/fetch-axios" element={<FetchAxios />} />
         <Route path="/fetch-api" element={<FetchApi />} />
         <Route path="/dynamic-list" element={<DynamicList />} />
+        <Route path="/redux" element={<ReduxPlayground />} />
       </Routes>
     </Layout>
   );

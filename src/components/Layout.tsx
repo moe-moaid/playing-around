@@ -11,6 +11,7 @@ const routes = [
   { link: '/fetch-axios', title: 'Fetch Axios' },
   { link: '/fetch-api', title: 'Fetch API' },
   { link: '/dynamic-list', title: 'Dynamic List' },
+  { link: '/redux', title: 'Redux Playground' },
 ];
 
 function Layout({ children }: Props) {
