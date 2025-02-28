@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ThemeButton from './ThemeButton';
 interface Props {
   children: React.ReactNode;
 }
@@ -15,14 +14,6 @@ const routes = [
 ];
 
 function Layout({ children }: Props) {
-  const inputText = 'This is a test sentence.';
-  const OMITTED_WORDS = ['is', 'a'];
-  const reg = new RegExp('\\b(' + OMITTED_WORDS.join('|') + ')\\b', 'gi');
-
-  const newText = inputText.replaceAll(reg, '');
-  console.log(JSON.stringify(newText));
-  // Output: "This  test sentence."
-  // Notice the extra space between "This" and "test"
 
   return (
     <>
@@ -35,9 +26,6 @@ function Layout({ children }: Props) {
               </li>
             </Link>
           ))}
-          <li>
-            <ThemeButton />
-          </li>
         </ul>
       </nav>
       {children}
