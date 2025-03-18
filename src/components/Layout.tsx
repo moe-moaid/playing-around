@@ -15,6 +15,18 @@ const routes = [
 
 function Layout({ children }: Props) {
 
+  for(let i = 0; i <= 10; i++){
+    setTimeout(() => {
+      console.log('first Loop = ', i);
+    })
+  }
+
+  for(var i = 0; i <= 10; i++){
+    setTimeout(() => {
+      console.log('second Loop = ', i);
+    })
+  }
+
   return (
     <>
       <nav className="flex flex-row justify-center items-center bg-green-50 py-2">
