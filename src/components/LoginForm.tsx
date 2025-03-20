@@ -1,19 +1,19 @@
 import Input from './Input';
 
 function LoginForm() {
-  const promise = newPromise((resolve, reject) => {
-    console.log(1);
-    setTimeout(() => {
-      console.log('timerStart');
-      resolve('success');
-      console.log('timerEnd');
-    }, 0);
-    console.log(2);
-  });
-  promise.then((res) => {
-    console.log(res);
-  });
-  console.log(4);
+  // const promise = newPromise((resolve, reject) => {
+  //   console.log(1);
+  //   setTimeout(() => {
+  //     console.log('timerStart');
+  //     resolve('success');
+  //     console.log('timerEnd');
+  //   }, 0);
+  //   console.log(2);
+  // });
+  // promise.then((res) => {
+  //   console.log(res);
+  // });
+  // console.log(4);
 
   return (
     <div className="flex justify-center mt-24 width-[400px]">
