@@ -1,7 +1,7 @@
 import Input from './Input';
 
 function LoginForm() {
-  const promise = newPromise((resolve, reject) => {
+  const promise = newPromise((resolve, _, __) => {
     console.log(1);
     setTimeout(() => {
       console.log('timerStart');
